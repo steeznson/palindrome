@@ -29,12 +29,7 @@ int main(int argc, char *argv[]){
     strcpy(word, argv[1]);
 
     // compute result and print
-    if (length & 1){
-        printf("%s has an odd number of chars\n", word);
-        result = 0;
-    } else {
-        result = is_palindrome(word, length);
-    }
+    result = is_palindrome(word, length);
     if (result){
         printf("%s is a palindrome\n", word);
     } else {
